@@ -39,4 +39,4 @@ for line in sys.stdin:
         if country_code != '' and time_interval != '':
             time_interval = int(time_interval)
             if es_dia_laborable(time_interval):
-                print '%s\t%s' % (country_code,es_zona(grid_zone), 1)
+                print '%s\t%s' % (es_zona(grid_zone), country_code, 1, time_interval)
